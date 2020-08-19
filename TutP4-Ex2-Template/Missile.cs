@@ -7,13 +7,12 @@ using System.Threading.Tasks;
 
 namespace TutP4_Ex2_Template
 {
-    class Missile
+    class Missile : Sprite
     {
         // fields ********************
         private const int WIDTH = 4;
         private const int HEIGHT = 8;
-        private int _x;
-        private int _y;
+
 
         // constructor ********************
         /// <summary>
@@ -21,26 +20,9 @@ namespace TutP4_Ex2_Template
         /// </summary>
         /// <param name="x">The x position of the centre of the missile</param>
         /// <param name="y">The y position of the centre of the missile</param>
-        public Missile(int x, int y)
+        public Missile(int x, int y) : base(x, y)
         {
-            _x = x;
-            _y = y;
-        }
-
-        /// <summary>
-        /// Gets the x position of the missile
-        /// </summary>
-        public int X
-        {
-            get { return _x; }
-        }
-
-        /// <summary>
-        /// Gets the y position of the missile
-        /// </summary>
-        public int Y
-        {
-            get { return _y; }
+           // inherited from the Sprite Class
         }
 
         /// <summary>

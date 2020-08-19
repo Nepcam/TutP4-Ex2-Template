@@ -56,7 +56,7 @@ namespace TutP4_Ex2_Template
         public void Display(Graphics paper)
         {
             SolidBrush br = new SolidBrush(Color.Black);
-            paper.FillEllipse(br, _x - SIZE / 2, _y - SIZE / 2, SIZE, SIZE);
+            paper.FillEllipse(br, X - SIZE / 2, Y - SIZE / 2, SIZE, SIZE);
         }
     }
 }

@@ -19,7 +19,9 @@ namespace TutP4_Ex2_Template
 
         private void buttonPlay_Click(object sender, EventArgs e)
         {
-
+            Graphics paper = pictureBoxDisplay.CreateGraphics();
+            Bomb b1 = new Bomb(50, 50);
+            b1.Display(paper);            
         }
     }
 }
